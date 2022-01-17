@@ -1,0 +1,19 @@
+apiVersion: dapr.io/v1alpha1
+kind: Component
+metadata:
+  name: pubsub
+  namespace: default
+spec:
+  type: pubsub.kafka
+  version: v1
+  metadata:
+    - name: brokers
+      value: "localhost:29092"
+    - name: consumerGroup
+      value: "Demo_Consumer_Group"
+    - name: clientID
+      value: "Demo_Kafka_Client_ID"
+    - name: authRequired
+      value: "false"
+    - name: maxMessageBytes
+      value: 1024

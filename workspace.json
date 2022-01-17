@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "backend-base": "apps/backend/base",
+    "backend-notification": "apps/backend/notification",
+    "utilities": "libs/utilities"
+  }
+}
