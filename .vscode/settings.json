@@ -6,6 +6,7 @@
     "corporate",
     "dapr",
     "eqeqeq",
+    "healthz",
     "logform",
     "nrwl",
     "Parens",
@@ -15,6 +16,7 @@
     "secretmanager",
     "secretstores",
     "sendgrid",
+    "sqlserver",
     "typeorm"
   ]
 }

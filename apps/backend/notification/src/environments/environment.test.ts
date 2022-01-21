@@ -36,13 +36,13 @@ export function environment(): IConfiguration {
       pubsub: {
         kafka: {
           topic: {
-            email: 'test.sofotbiz.boilerplate.notification.email'
+            email: 'test.corporate.boilerplate.notification.email'
           }
         }
       },
       sendGrid: {
         apiKey: sendGridApiKey,
-        verifiedSender: 'zevans@paperlessproposal.com'
+        verifiedSender: ''
       },
       pubnub: {
         publishKey: '12',
