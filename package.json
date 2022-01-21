@@ -6,7 +6,7 @@
     "start": "nx serve",
     "build": "nx build",
     "test": "nx test",
-    "infrastructure:build": "docker-compose -f infrastructure/local/docker-compose.yml up --build --remove-orphans",
+    "infrastructure:up": "docker-compose -f infrastructure/local/docker-compose.yml up --build --remove-orphans",
     "infrastructure:down": "docker-compose -f infrastructure/local/docker-compose.yml down --remove-orphans",
     "backend-base:serve": "dapr run --components-path ./infrastructure/local/dapr/components --dapr-http-port 3500 --app-id 'backend-base' --app-port 8000 nx serve backend-base",
     "backend-base:precommit": "eslint --fix ./apps/backend/base && prettier --config .prettierrc ./apps/backend/base --write && nx test backend-base --skip-nx-cache && nx build backend-base --prod --progress --optimization --skip-nx-cache --generatePackageJson=true",
