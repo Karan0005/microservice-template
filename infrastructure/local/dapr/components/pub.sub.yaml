@@ -7,13 +7,19 @@ spec:
   type: pubsub.kafka
   version: v1
   metadata:
-    - name: brokers
-      value: "localhost:29092"
-    - name: consumerGroup
-      value: "Demo_Consumer_Group"
-    - name: clientID
-      value: "Demo_Kafka_Client_ID"
-    - name: authRequired
-      value: "false"
-    - name: maxMessageBytes
-      value: 1024
+  - name: brokers
+    value: "localhost:29092"
+  - name: consumerGroup
+    value: "Consumer_Group_First"
+  - name: clientID
+    value: ""Sample_Client_ID"
+  - name: authType 
+    value: "none"
+  - name: maxMessageBytes
+    value: 1024
+  - name: consumeRetryInterval
+    value: 200ms
+  - name: version
+    value: 0.10.2.0
+  - name: disableTls 
+    value: "true"
